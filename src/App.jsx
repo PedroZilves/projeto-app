@@ -1,24 +1,29 @@
 import Cabecalho from "./components/Cabecalho";
+import Conteudo from "./components/Conteudo";
+import Rodape from "./components/Rodape";
+import reactLogo from "./assets/react.svg";
 
-// import React from "react"
 export default function App() {
+
+  let reactLogoAlt = "React Logo";
+
+  //Lista de links redes sociais
+
+  let listaLinks =[<li>Github</li>, <li>X</li>, <li>Reddit</li> ];
+
   return (
     <>
-    <div className="container"> 
-    
-      <Cabecalho/>
+      <div className="container">
 
-    <section>
+        <Cabecalho/>
 
-    <p><a href="">Home Page</a></p>
-    <button onClick={()=>alert("Hello World!")}>Click me</button>
+        {/* <img src={reactLogo} alt={reactLogoAlt} /> */}
 
-    </section>
-    <footer>
-      <p>&copy;2021, Vite.js and react.</p>
-    </footer>
-    
-     </div>
+        <Conteudo reactLogoProps={reactLogo} reactLogoAltProps={reactLogoAlt} />
+
+        <Rodape listaProps={listaLinks}/>
+
+      </div>
     </>
   )
 }

@@ -1,11 +1,10 @@
 
-
 export default function Cabecalho() {
   return (
     <>
-    
-    <header><h1>Vite+react</h1></header>
-    
+        <header>
+          <h1>Vite + React</h1>
+        </header> 
     </>
   )
 }
