@@ -1,7 +1,7 @@
-export default function Home(){
-    return(
-        <div>
-            <p>aaaaaa</p>
-        </div>
-    )
+import React from 'react'
+
+export default function Home() {
+  return (
+    <div>Home</div>
+  )
 }

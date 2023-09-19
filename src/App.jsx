@@ -20,8 +20,8 @@ export default function App() {
 
         {/* <img src={reactLogo} alt={reactLogoAlt} /> */}
 
-         <Outlet/>
-
+        {/* <Conteudo reactLogoProps={reactLogo} reactLogoAltProps={reactLogoAlt} /> */}
+        <Outlet/>
         <Rodape listaProps={listaLinks}/>
 
       </div>

@@ -1,7 +1,7 @@
-export default function Erro404(){
-    return(
-        <div>
-            <p>aaaaaa</p>
-        </div>
-    )
+import React from 'react'
+
+export default function Erro404() {
+  return (
+    <div>Erro404</div>
+  )
 }

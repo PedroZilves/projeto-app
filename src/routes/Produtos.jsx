@@ -1,7 +1,10 @@
-export default function Produtos(){
-    return(
-        <div>
-            <p>aaaaaa</p>
-        </div>
-    )
+import React from 'react'
+
+export default function Produtos() {
+
+    document.title = "HOME";
+
+  return (
+    <div>Produtos</div>
+  )
 }
