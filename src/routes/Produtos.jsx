@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Produtos() {
 
-    document.title = "HOME";
+    document.title = "Lista de Produtos";
 
   return (
     <div>Produtos</div>
