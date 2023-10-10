@@ -1,7 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link,useLocation } from "react-router-dom";
 import styles from "./Cabecalho.module.css";
-
+import "./Cabecalho.scss"
 export default function Cabecalho() {
+
+  const rotaAtual = useLocation();
 
   
   return (
@@ -13,10 +15,10 @@ export default function Cabecalho() {
           {/* Crie uma lista com 5 links para as nossas rotas:
           Obs: Utilize o componente Link do router-dom */}
 
-          <nav>
+          <nav className="">
             <ul>
-              <li><Link to="/">HOME</Link></li>
-              <li><Link to="/produtos">PRODUTOS</Link> </li>
+              <li><Link to="/" className={rotaAtual.pathname == '/' ? 'active ': ""}>HOME</Link></li>
+              <li><Link to="/produtos" className={rotaAtual.pathname == '/produtos' ? 'active ': ""}>PRODUTOS</Link> </li>
             </ul>
           </nav>
 
